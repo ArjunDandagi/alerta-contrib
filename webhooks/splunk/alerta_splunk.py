@@ -23,7 +23,7 @@ class SplunkWebhook(WebhookBase):
         return Alert(
             resource="UKGR",
             event="splunk_alert",
-            environment="STAGE",
+            environment="Production",
             severity="ERROR",
             service="splunk",
             group="Application",
