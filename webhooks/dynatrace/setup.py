@@ -1,11 +1,11 @@
 from setuptools import setup, find_packages
 
-version = '1.0.0'
+version = '1.0.1'
 
 setup(
     name="alerta-dynatrace",
     version=version,
-    description='Alerta webhook for splunk',
+    description='Alerta webhook for dynatrace',
     url='https://github.com/alerta/alerta-contrib',
     license='MIT',
     author='Nick Satterly',
@@ -18,7 +18,7 @@ setup(
     zip_safe=True,
     entry_points={
         'alerta.webhooks': [
-            'splunk = alerta_dynatrace:DynatraceWebhook'
+            'dynatrace = alerta_dynatrace:DynatraceWebhook'
         ]
     }
 )
