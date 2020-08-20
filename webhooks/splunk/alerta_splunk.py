@@ -25,16 +25,14 @@ class SplunkWebhook(WebhookBase):
             event="splunk_alert",
             environment="STAGE",
             severity="ERROR",
-            service="",
-            group="",
+            service="splunk",
+            group="Application",
             value="sample",
             text="something is missing",
             tags=list(),
             attributes={},
             customer="nmurth1",
-            origin="",
-            event_type='splunkAlert',
-            timeout="",
+            origin="splunk",
             raw_data=json.dumps(payload)
         )
 
