@@ -3,7 +3,7 @@ from alerta.models.alert import Alert
 from alerta.webhooks import WebhookBase
 import json
 
-class SplunkWebhook(WebhookBase):
+class DynatraceWebhook(WebhookBase):
 
     def incoming(self, query_string, payload):
         # return Alert(
