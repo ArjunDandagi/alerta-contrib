@@ -30,7 +30,7 @@ class SplunkWebhook(WebhookBase):
             value="sample",
             text="something is missing",
             tags=list(),
-            attributes="",
+            attributes={},
             customer="nmurth1",
             origin="",
             event_type='splunkAlert',
