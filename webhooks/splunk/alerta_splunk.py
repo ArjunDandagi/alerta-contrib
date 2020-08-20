@@ -21,14 +21,13 @@ class SplunkWebhook(WebhookBase):
         #     raw_data=str(payload)
         # )
         return Alert(
-            resource="UKGR",
-            event="splunk_alert",
+            resource="splunk",
+            event=str(payload["search_name"]),
             environment="Production",
             severity="critical",
-            service=["something"],
+            service=[str(payload["app"])],
             group="Application",
-            value="sample",
-            text="something is missing",
+            text=str(payload["search_name"]),
             tags=list(),
             origin="splunk",
             raw_data=json.dumps(payload)
