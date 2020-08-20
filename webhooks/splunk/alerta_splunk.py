@@ -30,7 +30,6 @@ class SplunkWebhook(WebhookBase):
             value="sample",
             text="something is missing",
             tags=list(),
-            attributes={},
             origin="splunk",
             raw_data=json.dumps(payload)
         )
